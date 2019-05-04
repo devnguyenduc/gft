@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \title{}
 
@@ -55,13 +56,47 @@ $$ E = \langle dt, \vec{p} \rangle = p^0. $$
 
 $$ E = -\vec{p} \dot \vec{U}. $$
 
-\end{document}
-
 \section{Cái gì đó}
 \section{Cái gì đó 2}
 \section{Stress-energy in General Relavity}
 \subsection{Energy conditions and demonstrations}
 \subsubsection{The four energy conditions and their physical meaning}
-$$ $$
+$ \textbf{Null energy condition}$\\
+The null energy condition stipulates that for every future-pointing null vector field $\vec{k}$\\
+${\displaystyle \rho =T_{ab}k^{a}k^{b}\geq 0.}$ \\
+\\
+$ \textbf{Weak energy condition}$\\
+The weak energy condition stipulates that for every timelike vector field {\displaystyle {\vec {X}},} {\displaystyle {\vec {X}},} the matter density observed by the corresponding observers is always non-negative:\\
+${\displaystyle \rho =T_{ab}X^{a}X^{b}\geq 0.}$
+\\
+\\
+$ \textbf{Dominant energy condition}$\\
+The dominant energy condition stipulates that, in addition to the weak energy condition holding true, for every future-pointing causal vector field (either timelike or null) {\displaystyle {\vec {Y}},} {\displaystyle {\vec {Y}},} the vector field {\displaystyle -{T^{a}}_{b}Y^{b}} {\displaystyle -{T^{a}}_{b}Y^{b}} must be a future-pointing causal vector. That is, mass–energy can never be observed to be flowing faster than light.\\
+\\
+$ \textbf{Strong energy condition}$\\
+The strong energy condition stipulates that for every timelike vector field {\displaystyle {\vec {X}}} {\vec {X}}, the trace of the tidal tensor measured by the corresponding observers is always non-negative:\\
+${\displaystyle \left(T_{ab}-{\frac {1}{2}} T g_{ab}\right)X^{a}X^{b}\geq 0}$ \\
 \subsubsection{Applications to perfect fluid}
-$$ $$
+$$ {\displaystyle T^{ab}=\rho u^{a}u^{b}+p h^{ab},} $$
+\\
+where ${\displaystyle {\vec {u}}} {\vec {u}}$ is the four-velocity of the matter particles and where ${\displaystyle h^{ab}\equiv g^{ab}+u^{a}u^{b}} h^{{ab}}\equiv g^{{ab}}+u^{{a}}u^{{b}}$ is the projection tensor onto the spatial hyperplane elements orthogonal to the four-velocity, at each event. (Notice that these hyperplane elements will not form a spatial hyperslice unless the velocity is vorticity-free; that is, irrotational.) With respect to a frame aligned with the motion of the matter particles, the components of the matter tensor take the diagonal form
+\\
+\begin{equation}
+    {\displaystyle T^{{\hat {a}}{\hat {b}}}= {\begin{matrix} \rho &0&0&0\\0&p&0&0\\0&0&p&0\\0&0&0&p \end{matrix}}.} 
+\end{equation}  
+\\
+Here, ${\displaystyle \rho } $ is the energy density and ${\displaystyle p} $ is the pressure.
+\\
+The energy conditions can then be reformulated in terms of these eigenvalues:
+\\
+\\
+- The null energy condition stipulates that ${\displaystyle \rho +p\geq 0.} {\displaystyle \rho +p\geq 0.}$\\
+- The weak energy condition stipulates that ${\displaystyle \rho \geq 0,\;\;\rho +p\geq 0.} {\displaystyle \rho \geq 0,\;\;\rho +p\geq 0.}$
+\\
+- The dominant energy condition stipulates that ${\displaystyle \rho \geq |p|.} {\displaystyle \rho \geq |p|.}$
+\\
+- The strong energy condition stipulates that ${\displaystyle \rho +p\geq 0,\;\;\rho +3p\geq 0.} {\displaystyle \rho +p\geq 0,\;\;\rho +3p\geq 0.}$
+\\
+\\
+The implications among these conditions are indicated in the figure at right. Note that some of these conditions allow negative pressure. Also, note that despite the names the strong energy condition does not imply the weak energy condition even in the context of perfect fluids.
+\end{document}
